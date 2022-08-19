@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>GannaAdelZohry.dart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6897bb;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+GannaAdelZohry.dart</font>
+</center></td></tr></table>
+<pre><span class="s0">main() {</span>
+  <span class="s0">List myList = [</span><span class="s1">8</span><span class="s2">, </span><span class="s1">12</span><span class="s2">, </span><span class="s1">18</span><span class="s2">, </span><span class="s1">20</span><span class="s2">, </span><span class="s1">24</span><span class="s2">, </span><span class="s1">26</span><span class="s2">, </span><span class="s1">30</span><span class="s0">]</span><span class="s2">;</span>
+  <span class="s3">/*for(var i=4;i&lt;6;i++) 
+    { 
+      print(myList[i]); 
+    }*/</span>
+
+  <span class="s2">var </span><span class="s0">first = myList.getRange(</span><span class="s1">4</span><span class="s2">, </span><span class="s1">6</span><span class="s0">).toList()</span><span class="s2">;</span>
+  <span class="s0">print(first)</span><span class="s2">;</span>
+
+  <span class="s3">///////////////////////////////////////////////////////////////////////</span>
+
+  <span class="s0">List mylist = [</span><span class="s1">10</span><span class="s2">, </span><span class="s1">20</span><span class="s2">, </span><span class="s1">30</span><span class="s2">, </span><span class="s1">40</span><span class="s2">, </span><span class="s1">50</span><span class="s2">, </span><span class="s1">55</span><span class="s2">, </span><span class="s1">65</span><span class="s2">, </span><span class="s1">75</span><span class="s0">]</span><span class="s2">;</span>
+  <span class="s0">List mylist2 = [</span><span class="s1">20</span><span class="s2">, </span><span class="s1">25</span><span class="s2">, </span><span class="s1">35</span><span class="s2">, </span><span class="s1">65</span><span class="s2">, </span><span class="s1">50</span><span class="s2">, </span><span class="s1">55</span><span class="s2">, </span><span class="s1">75</span><span class="s2">, </span><span class="s1">80</span><span class="s0">]</span><span class="s2">;</span>
+  <span class="s2">var </span><span class="s0">newList = mylist + mylist2</span><span class="s2">;</span>
+  <span class="s2">var </span><span class="s0">Newlist = newList.toSet().toList()</span><span class="s2">;</span>
+  <span class="s0">print(Newlist)</span><span class="s2">;</span>
+
+  <span class="s3">////////////////////////////////////////////////////////////////////////</span>
+<span class="s0">}</span>
+
+<span class="s0">main()</span>
+<span class="s0">{</span>
+  <span class="s0">coordinates c1 = </span><span class="s2">new </span><span class="s0">coordinates ()</span><span class="s2">;</span>
+  <span class="s0">c1.show()</span><span class="s2">;</span>
+
+<span class="s0">}</span>
+<span class="s0">abstract </span><span class="s2">class </span><span class="s0">Coordinates</span>
+<span class="s0">{</span>
+  <span class="s2">var </span><span class="s0">latitude = </span><span class="s1">50 </span><span class="s2">;</span>
+  <span class="s2">var </span><span class="s0">longitude = </span><span class="s1">60</span><span class="s2">;</span>
+<span class="s0">}</span>
+<span class="s2">class </span><span class="s0">coordinates </span><span class="s2">extends </span><span class="s0">Coordinates</span>
+<span class="s0">{</span>
+  <span class="s2">void </span><span class="s0">show()</span>
+  <span class="s0">{</span>
+    <span class="s0">print (latitude)</span><span class="s2">;</span>
+    <span class="s0">print (longitude)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+<span class="s3">////////////////////////////////////////////////////////////</span>
+
+<span class="s0">import </span><span class="s4">'dart:io'</span><span class="s2">;</span>
+
+<span class="s0">main()</span>
+<span class="s0">{</span>
+  <span class="s0">String ? email</span><span class="s2">;</span>
+  <span class="s0">print(</span><span class="s4">'Enter the email : '</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">email = stdin.readLineSync()</span><span class="s2">;</span>
+  <span class="s2">if </span><span class="s0">(email == </span><span class="s4">'email@email.com'</span><span class="s0">)</span>
+  <span class="s0">{</span>
+    <span class="s0">print(</span><span class="s4">'it is true'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+  <span class="s2">else</span>
+  <span class="s0">{</span>
+    <span class="s0">print(</span><span class="s4">'it is wrong'</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+
+
+
+
+</pre>
+</body>
+</html>
